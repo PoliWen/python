@@ -1,6 +1,6 @@
 #这一章节学习python的while循环
 n = 100
-sum=0
+sum = 0
 counter = 1
 while counter <= n:
 	sum += counter

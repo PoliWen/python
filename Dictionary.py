@@ -18,6 +18,6 @@ print(str(dic))
 print(type(dic))
 print('weight' in dic)
 print(dic.items())
-for i,j in dic.items():
+for i,j in dic.items():#使用此方法遍历一个dictionary字典
 	print(i,':\t',j)
 print('字典的数据结构先学到这里，还有些方法不理解，下次要继续深入的学习')

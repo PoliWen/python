@@ -12,8 +12,12 @@ print(len(list0))
 print(list0+list1)
 print(['Hi!']*4)
 print(3 in list1)
+stt = ''
 for i in list0: #用for循环数组
-	print(i,end='')
+	stt=stt+i
+print('========================================')
+print(stt)
+print('========================================')
 list1.append('6')#使用append往列表中添加新的元素
 print(list1)
 print(list2.count('a'))#计算某一个元素出现的位置
@@ -32,5 +36,5 @@ print(list1)
 print(list1.index('111'))#index()查找某一项的位置
 list1.remove('111')#list.remove()移出列表的某一项
 print(list1)
-
+print(','.join(list2))#list转string
 
