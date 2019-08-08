@@ -55,7 +55,7 @@ def update_ip_list():
         ip_info = ips[i]
         tds = ip_info.select('td')
         ip_list.append(tds[1].text +':'+ tds[2].text)
-    with open("os/iplist.txt","a",encoding='utf-8') as f:
+    with open("temp/iplist.txt","a",encoding='utf-8') as f:
             for ip in ip_list:
                 f.write(ip)
                 f.write('\n')

@@ -26,7 +26,7 @@ def get_total_page(url):
         # 速卖通平台评论500页之后，均返回第一页数据
         if total_page>=500:
             total_page=500
-            print('总共有'+str(total_page)+'页')
+            print('总共有' + str(total_page) + '页')
     except requests.RequestException as e:
         print("requestsException")
         print(e)
@@ -208,6 +208,7 @@ class CommentSpyder(threading.Thread):
                 tempData['feedback_time']=feedback_time
                 tempData['additional_feedback']=additional_feedback
                 print(tempData)
+                print('ooooooooooooooooooooooooooooooooooooooooo')
                 print('\n')
                 self.result_queue.put(tempData)
         except Exception as e:
@@ -261,7 +262,7 @@ class Saver(threading.Thread):
         self.result_queue = result_queue
         self.productid=productid
         self.owner_memberid=owner_memberid        
-        self.method=method
+        self.method = method
         self.db=db
         self.user=user
         self.password=password
@@ -287,10 +288,11 @@ class Saver(threading.Thread):
             if self.method=='db':
                 self.save_data_to_db(data)
             elif self.method=='csv':
+                print('==============')
                 self.save_data_to_csv(data)
             else:
                 pass
-            print("插入第"+str(i)+'条数据')
+            print("插入第"+ str(i) +'条数据')
             i=i+1
     def closeConn(self):
         self.conn.close()
@@ -302,12 +304,13 @@ def main(productid,owner_memberid,companyid,thread_num=10):
     t1=time.time()
     total_page=get_total_page(url)
     t2=time.time()
-    print('获取总页数耗时:'+str(t2-t1))   
+    print('获取总页数耗时:' + str(t2-t1))
     spyders=[]
     #根据评论总页数和线程数(默认10)为每个线程平均分配每个线程负责的页码数
     if total_page>0:
         page_num_per_thread=int(total_page/thread_num)   
         for i in range(thread_num):
+            print('xxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
             start_page=i*page_num_per_thread+1
             end_page=(i+1)*page_num_per_thread
             if(i==(thread_num-1)):
@@ -317,7 +320,7 @@ def main(productid,owner_memberid,companyid,thread_num=10):
         for spyder in spyders:
             spyder.start()
         saver = Saver(result_queue,productid,owner_memberid)
-        saver.daemon = True        
+        saver.daemon = True
         saver.start()
         for i in range(10):
             spyders[i].join()
@@ -326,5 +329,6 @@ if __name__ == '__main__':
     productid="32977685024"
     owner_memberid="229788063"
     companyid="239288868"
+    update_ip_list()
     main(productid,owner_memberid,companyid)
-#可以把数据爬下来，但是数据很乱呢
+    #可以把数据爬下来，但是数据很乱呢
