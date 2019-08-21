@@ -6,3 +6,11 @@ while a < 7:
 	else:
 		print(a,'is odd')
 	a+=1
+else:
+	print(a,'大于7')
+
+#python里面的三目运算
+
+b = 6
+c = 4
+print('b') if b>c else print('c')
