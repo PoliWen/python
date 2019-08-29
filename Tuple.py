@@ -5,7 +5,7 @@ print(tup)
 print(type(tup))
 print(tup[0])
 print(tup[0:3])
-print(tup+tup1)  # 元组是不能修改的，但是可以进行拼接,使用+号可以拼接两个元组
+print(tup + tup1)  # 元组是不能修改的，但是可以进行拼接,使用+号可以拼接两个元组
 print(len(tup))
 for i in tup:
     print(i, end='')

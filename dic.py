@@ -42,3 +42,12 @@ s = '{ "name":"wxl", "age":"29", "target":"年薪30万"}'
 ss = json.loads(s)
 print(ss['age'])
 print(type(ss))
+
+dics = dict(name='文孝礼',age='28',goal='webdisign')
+print(dics['name'])
+dics.clear() #清空一个dict
+
+
+
+
+
