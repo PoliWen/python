@@ -9,7 +9,10 @@ def readdoc(sfp,dfp):
     print(dfp)
     docn = docx.Document(sfp)
     docArr = []
+    print(dir(docn))
     for p in docn.paragraphs:
+        #print(dir(p))
+        break
         docArr.append('<p>'+ p.text + '</p>')
     print('读取docx文件成功')
     with open(dfp,'w',encoding='utf-8') as f:
