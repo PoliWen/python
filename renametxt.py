@@ -20,7 +20,6 @@ def add_mark():
         if old_name != sys.argv[0]:
             os.rename('./backupdata/' + old_name,
                       './backupdata/' + mark+old_name)
-
 # 删除前缀
 
 

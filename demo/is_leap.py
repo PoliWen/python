@@ -24,7 +24,7 @@ def is_leap(year):
 # dateTime里面的_is_leap()函数的更简洁的写法
 
 
-def _is_leap(year):  # 再次验证一遍读不懂的时候就多都几遍,一句都不懂时，就拆解分解
+def _is_leap(year):  # 再次验证一遍读不懂的时候就多读几遍,一句读不懂时，就拆解分解
     return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
 
 
