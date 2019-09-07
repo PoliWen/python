@@ -90,6 +90,7 @@ def  get_key_info(response,*args,**kwargs): #敲代码要认真啊
     print(response.headers['Content-type'])
     print('*'*30)
     print(response.apparent_encoding)
+    response.encoding = response.apparent_encoding ## 奇怪啊，为什么要这么设置用一下才不会出现乱码
     with open('os/test.html','w',encoding=response.apparent_encoding) as f:
         f.write(response.text)
         f.close()
@@ -97,7 +98,7 @@ def  get_key_info(response,*args,**kwargs): #敲代码要认真啊
     #good,写在钩子函数里面处理请求过来的数据
 
 #hooks是一个回调钩子函数
-res = http.get('https://www.baidu.com',hooks=dict(response=get_key_info))
+res = http.get('https://www.baidu.com',hooks=dict(response = get_key_info))
 
 # 请求异常处理
 
