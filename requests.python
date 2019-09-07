@@ -33,11 +33,15 @@ stream = true
 
 # 返回的结果的api
 
-r.status             //返回的状态吗
-r.text               //返回的内容
+r.status             //返回的状态码  300，301，400，404，500，200等
+r.text               //返回的内容 unicode编码
 r.encoding           //设置返回内容的编码
 r.apparent_encoding  //从内容中返回内容的编码格式
 r.content            //http相应内容的二进制形式
+r.reason             
+r.url                //请求的url
+r.header             //返回的头信息
+r.elapsed            //请求的时长
 
 '''
 ## get请求传递
@@ -100,7 +104,5 @@ def  get_key_info(response,*args,**kwargs): #敲代码要认真啊
 #hooks是一个回调钩子函数
 res = http.get('https://www.baidu.com',hooks=dict(response = get_key_info))
 
-# 请求异常处理
-
-
+# http认证
 
