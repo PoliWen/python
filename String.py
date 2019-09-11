@@ -7,10 +7,10 @@ print(word[-1:])
 print(word[0:])
 print(word[0:6:2])
 print(word[3])  # 访问string中的字符串
-print(word+'+的符号是用来拼接字符串的')
+print(word + '+的符号是用来拼接字符串的')
 print(word*3)  # *是用来重复输出字符串的，这里输出3次
 if('h' in word):  # 使用in来判断字符串是否在一个字符串中
-    print('h is in word')
+    print('h is in word')z
 else:
     print('h is not in word')
 if('g' not in word):  # 使用not in来判断某一个字符不属于某一个字符串

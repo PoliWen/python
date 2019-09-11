@@ -22,8 +22,11 @@ class student(people):
       def __init__(self,name,age,weight,grade):
       	people.__init__(self,name,age,weight)#调用私有属性__weight会报错，因为私有属性不能被继承
       	self.grade = grade
-      def speak(self):
+      def speak(self): #方法的重载，那么如何调用父级的方法呢？
+        #super(student, self).speak()
       	print("%s 说: 我 %d 岁。我今年读%s" %(self.name,self.age,self.grade))
+
 s = student('小明',10,30,'三年级')
 s.speak()
+super(student,s).speak() #子类直接调用父类的方法
 

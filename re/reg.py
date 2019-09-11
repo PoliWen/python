@@ -1,7 +1,8 @@
 # python正则表达式
 import re
 txt = 'The rain is Spain'
-print(re.match(r'(.*)( Spain$)', txt, re.I | re.M).group(1))
+# match从第一个开始匹配
+print(re.match(r'(.*)( Spain$)', txt, re.I | re.M).group())
 print(re.findall('ai', txt))
 print(re.split('\s', txt))
 print(re.sub('\s', '9', txt))  # 替换
@@ -22,3 +23,7 @@ print(re.findall(pattn5, str1))
 str3 = 'The white dog wears a black hat.'
 pttn = r'The (white|black) dog wears a (white|black) hat.'
 # 把字符串里面的都包含大写字母的字符串都给找出来替换并且换回去
+repl = r'the \2 dog wears a \1 hat.' #分组匹配
+print(re.sub(pttn,repl,str3))
+repl2 = r'the \1 dog wears a \2 hat.'
+print(re.sub(pttn,repl2,str3))  #分组匹配

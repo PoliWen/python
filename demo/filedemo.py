@@ -43,6 +43,7 @@ def run():
             print('统计的结果为！', len(result))
             f2.close()
         f1.close()
+        
 
 
 def main():

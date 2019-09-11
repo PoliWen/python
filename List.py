@@ -4,14 +4,14 @@ list1 = [1, 2, 3, 4, 5]
 list2 = ['a', 'b', 'c', 'd', 'e', 'a']
 print(list0[0])
 print(list1[0:])
-list1[0] = 111
+list1[0] = 111 #修改
 print(list1)
-del list0[0]
+del list0[0]  #删除
 print(list0)
-print(len(list0))
+print(len(list0))  #长度
 print(list0 + list1)  # 将两个列表合并
 print(['Hi!']*4)
-print(3 in list1)
+print(3 in list1)  #判断元素是否存在一个列表中
 stt = ''
 for i in list0:  # 用for循环数组
     stt = stt+i
@@ -29,12 +29,13 @@ print(list1)
 list1.pop(2)
 print(list1)
 list1.insert(1, '111')  # 往指定的位置插入一个元素
+print('insert'*3)
 print(list1)
 list3 = list(range(5))  # list将元组转为列表
 list1.extend(list3)  # 拓展一个数组，合并两个列表
 print(list1)
-print(list1.index('111'))  # index()查找某一项的位置
-list1.remove('111')  # list.remove()移出列表的某一项
+print(list1.index('111'))   # index()查找某一项的位置
+list1.remove('111')         # list.remove()移出列表的某一项
 print(list1)
 '''
 多行注释

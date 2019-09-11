@@ -39,7 +39,7 @@ print(type(y))
 print(x)
 
 s = '{ "name":"wxl", "age":"29", "target":"年薪30万"}'
-ss = json.loads(s)
+ss = json.loads(s)  #字符串转json
 print(ss['age'])
 print(type(ss))
 

@@ -300,7 +300,7 @@ class Saver(threading.Thread):
         with open('os/' + filename, "a", newline="", encoding='utf-8') as f:
             writer = csv.writer(f, dialect="excel")
             writer.writerow([data['no'], self.productid, data['username'], data['usercountry'],
-                             data['buyer_feedback'], data['star'], data['feedback_time'], data['additional_feedback']])
+            data['buyer_feedback'], data['star'], data['feedback_time'], data['additional_feedback']])
 
     def save_data_to_db(self, data):
         try:
@@ -311,7 +311,7 @@ class Saver(threading.Thread):
         except Exception as e:
             print("插入数据出错")
             print(e)
-
+z
     def run(self):
         i = 0
         while True:

@@ -7,8 +7,6 @@ import os
 import re
 from docx2html  import convert    #将world转化为html
 import HTMLParser
-
-
 def readdoc(sfp,dfp):
     print(sfp)
     print(dfp)
