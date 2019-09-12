@@ -1,5 +1,7 @@
-# python字符串的学习
+# python字符串的学习= 
 word = 'hello python,python is so easy\a'
+daoyan = '''
+                            导演: 吕克·贝松 Luc Besson   主演: 让·雷诺 Jean Reno / 娜塔莉·波特曼 ...'''
 print('nmb', 'nigesx')  # 多个参数用逗号隔开，输出的时候以空格分开
 print(word)
 print(word[0:6])

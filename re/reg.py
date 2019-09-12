@@ -2,6 +2,9 @@
 import re
 txt = 'The rain is Spain'
 # match从第一个开始匹配
+daoyan = '''
+                            导演: 吕克·贝松 Luc Besson   主演: 让·雷诺 Jean Reno / 娜塔莉·波特曼 ...'''
+print(re.search(r'^.*导演:(.*\s{3}).*', daoyan, re.I | re.M).group(1)) 
 print(re.match(r'(.*)( Spain$)', txt, re.I | re.M).group())
 print(re.findall('ai', txt))
 print(re.split('\s', txt))
