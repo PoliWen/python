@@ -1,7 +1,5 @@
 # python字符串的学习= 
 word = 'hello python,python is so easy\a'
-daoyan = '''
-                            导演: 吕克·贝松 Luc Besson   主演: 让·雷诺 Jean Reno / 娜塔莉·波特曼 ...'''
 print('nmb', 'nigesx')  # 多个参数用逗号隔开，输出的时候以空格分开
 print(word)
 print(word[0:6])
@@ -12,7 +10,7 @@ print(word[3])  # 访问string中的字符串
 print(word + '+的符号是用来拼接字符串的')
 print(word*3)  # *是用来重复输出字符串的，这里输出3次
 if('h' in word):  # 使用in来判断字符串是否在一个字符串中
-    print('h is in word')z
+    print('h is in word')
 else:
     print('h is not in word')
 if('g' not in word):  # 使用not in来判断某一个字符不属于某一个字符串
