@@ -1,0 +1,1674 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   验证码
+  </title>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <link href="https://include.anjukestatic.com/aifang/res/2019091706/b/Aifang_Web_Captcha_CaptChaVerify.css" rel="stylesheet" rev="stylesheet" type="text/css"/>
+  <link href="//pages.anjukestatic.com/kfstouch/icons/Fonts-PC-XF/20190704001/iconfont.css" rel="stylesheet" rev="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   var PAGESTART = +new Date(); var __base_url =""
+  </script>
+  <script src="//include.anjukestatic.com/djs/base/logger/dom.dom/ajax/event/ui.autocomplete/cookie/site/utils/d7371891429c96b9068e71d55a82b6e0.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   J.site.init({"city_id":null,"page_version":"1706_2801"});
+  </script>
+  <link href="//pages.anjukestatic.com/xinfang/favicon.ico" rel="icon" type="image/ico"/>
+  <link href="//pages.anjukestatic.com/xinfang/favicon.ico" rel="shortcut icon"/>
+ </head>
+ <body>
+  <div id="container">
+   <div id="header">
+    <div class="glbLogo">
+     <div class="glbL">
+      <a class="logo" href="https://.anjuke.com" title="安居客房产网">
+       <b>
+        安居客房产网
+       </b>
+      </a>
+      <div class="city">
+       <span class="city_display" id="city_display">
+        <a class="city_current" href="//www.anjuke.com/sy-city.html">
+        </a>
+        <div class="city_panel" id="city_cities" style="display:none;">
+         <dl>
+          <dt>
+           华北东北
+          </dt>
+          <dd>
+           <a href="https://bj.fang.anjuke.com" soj="AF_Home_switchcity" title="北京楼盘">
+            北京
+           </a>
+           <a href="https://tj.fang.anjuke.com" soj="AF_Home_switchcity" title="天津楼盘">
+            天津
+           </a>
+           <a href="https://dl.fang.anjuke.com" soj="AF_Home_switchcity" title="大连楼盘">
+            大连
+           </a>
+           <a href="https://sjz.fang.anjuke.com" soj="AF_Home_switchcity" title="石家庄楼盘">
+            石家庄
+           </a>
+           <a href="https://heb.fang.anjuke.com" soj="AF_Home_switchcity" title="哈尔滨楼盘">
+            哈尔滨
+           </a>
+           <a href="https://shen.fang.anjuke.com" soj="AF_Home_switchcity" title="沈阳楼盘">
+            沈阳
+           </a>
+           <a href="https://ty.fang.anjuke.com" soj="AF_Home_switchcity" title="太原楼盘">
+            太原
+           </a>
+           <a href="https://cc.fang.anjuke.com" soj="AF_Home_switchcity" title="长春楼盘">
+            长春
+           </a>
+          </dd>
+         </dl>
+         <dl>
+          <dt>
+           华东地区
+          </dt>
+          <dd>
+           <a href="https://sh.fang.anjuke.com" soj="AF_Home_switchcity" title="上海楼盘">
+            上海
+           </a>
+           <a href="https://hz.fang.anjuke.com" soj="AF_Home_switchcity" title="杭州楼盘">
+            杭州
+           </a>
+           <a href="https://su.fang.anjuke.com" soj="AF_Home_switchcity" title="苏州楼盘">
+            苏州
+           </a>
+           <a href="https://nj.fang.anjuke.com" soj="AF_Home_switchcity" title="南京楼盘">
+            南京
+           </a>
+           <a href="https://wx.fang.anjuke.com" soj="AF_Home_switchcity" title="无锡楼盘">
+            无锡
+           </a>
+           <a href="https://jn.fang.anjuke.com" soj="AF_Home_switchcity" title="济南楼盘">
+            济南
+           </a>
+           <a href="https://qd.fang.anjuke.com" soj="AF_Home_switchcity" title="青岛楼盘">
+            青岛
+           </a>
+           <a href="https://ks.fang.anjuke.com" soj="AF_Home_switchcity" title="昆山楼盘">
+            昆山
+           </a>
+           <a href="https://nb.fang.anjuke.com" soj="AF_Home_switchcity" title="宁波楼盘">
+            宁波
+           </a>
+           <a href="https://nc.fang.anjuke.com" soj="AF_Home_switchcity" title="南昌楼盘">
+            南昌
+           </a>
+           <a href="https://fz.fang.anjuke.com" soj="AF_Home_switchcity" title="福州楼盘">
+            福州
+           </a>
+           <a href="https://hf.fang.anjuke.com" soj="AF_Home_switchcity" title="合肥楼盘">
+            合肥
+           </a>
+          </dd>
+         </dl>
+         <dl>
+          <dt>
+           华南地区
+          </dt>
+          <dd>
+           <a href="https://sz.fang.anjuke.com" soj="AF_Home_switchcity" title="深圳楼盘">
+            深圳
+           </a>
+           <a href="https://gz.fang.anjuke.com" soj="AF_Home_switchcity" title="广州楼盘">
+            广州
+           </a>
+           <a href="https://fs.fang.anjuke.com" soj="AF_Home_switchcity" title="佛山楼盘">
+            佛山
+           </a>
+           <a href="https://cs.fang.anjuke.com" soj="AF_Home_switchcity" title="长沙楼盘">
+            长沙
+           </a>
+           <a href="https://sy.fang.anjuke.com" soj="AF_Home_switchcity" title="三亚楼盘">
+            三亚
+           </a>
+           <a href="https://hui.fang.anjuke.com" soj="AF_Home_switchcity" title="惠州楼盘">
+            惠州
+           </a>
+           <a href="https://dg.fang.anjuke.com" soj="AF_Home_switchcity" title="东莞楼盘">
+            东莞
+           </a>
+           <a href="https://hai.fang.anjuke.com" soj="AF_Home_switchcity" title="海口楼盘">
+            海口
+           </a>
+           <a href="https://zh.fang.anjuke.com" soj="AF_Home_switchcity" title="珠海楼盘">
+            珠海
+           </a>
+           <a href="https://zs.fang.anjuke.com" soj="AF_Home_switchcity" title="中山楼盘">
+            中山
+           </a>
+           <a href="https://xm.fang.anjuke.com" soj="AF_Home_switchcity" title="厦门楼盘">
+            厦门
+           </a>
+          </dd>
+         </dl>
+         <dl>
+          <dt>
+           中 西 部
+          </dt>
+          <dd>
+           <a href="https://cd.fang.anjuke.com" soj="AF_Home_switchcity" title="成都楼盘">
+            成都
+           </a>
+           <a href="https://cq.fang.anjuke.com" soj="AF_Home_switchcity" title="重庆楼盘">
+            重庆
+           </a>
+           <a href="https://wh.fang.anjuke.com" soj="AF_Home_switchcity" title="武汉楼盘">
+            武汉
+           </a>
+           <a href="https://zz.fang.anjuke.com" soj="AF_Home_switchcity" title="郑州楼盘">
+            郑州
+           </a>
+           <a href="https://xa.fang.anjuke.com" soj="AF_Home_switchcity" title="西安楼盘">
+            西安
+           </a>
+           <a href="https://km.fang.anjuke.com" soj="AF_Home_switchcity" title="昆明楼盘">
+            昆明
+           </a>
+           <a href="https://gy.fang.anjuke.com" soj="AF_Home_switchcity" title="贵阳楼盘">
+            贵阳
+           </a>
+           <a href="https://lz.fang.anjuke.com" soj="AF_Home_switchcity" title="兰州楼盘">
+            兰州
+           </a>
+           <a href="https://ly.fang.anjuke.com" soj="AF_Home_switchcity" title="洛阳楼盘">
+            洛阳
+           </a>
+          </dd>
+         </dl>
+         <div class="blank">
+          <a href="//www.anjuke.com/sy-city.html">
+           更多城市&gt;&gt;
+          </a>
+         </div>
+        </div>
+       </span>
+       <script type="text/javascript">
+        J.ready(function(){
+            (function(){
+                var c=J.g('city_display'),
+                    p=J.g('city_cities');
+                    c.on('mouseenter',function(){p.show()})
+                        .on('mouseleave',function(){p.hide()})
+                }.require(['dom.dom','event.on'],true)
+            );
+        });
+       </script>
+      </div>
+     </div>
+     <div class="glbR">
+      <div class="broker_info">
+       <span style="color: #999">
+        客户登录：
+       </span>
+       <a class="u" href="https://my.anjuke.com/user/broker/brokerhome/" rel="nofollow">
+        中国网络经纪人
+       </a>
+       <a class="u" href="https://vip.fang.anjuke.com" rel="nofollow">
+        房易通
+       </a>
+      </div>
+      <div class="top-login-other">
+       <span class="other-title">
+        合作账号：
+       </span>
+       <a class="qq" href="https://member.anjuke.com/extlogin/?sid=anjuke&amp;url=aHR0cDovL2h5LmZhbmcuYW5qdWtlLmNvbS9jYXB0Y2hheGYtdmVyaWZ5Lw==&amp;logintype=qq&amp;from=topQQ" title="QQ登录">
+        QQ
+       </a>
+       <a class="twitter" href="https://member.anjuke.com/extlogin/?sid=anjuke&amp;url=aHR0cDovL2h5LmZhbmcuYW5qdWtlLmNvbS9jYXB0Y2hheGYtdmVyaWZ5Lw==&amp;logintype=weibo&amp;from=topweibo" title="微博登录">
+        微博
+       </a>
+      </div>
+     </div>
+     <div class="glb-mob">
+      <a href="https://.anjuke.com/mobile?from=RightBar" target="_blank">
+       <img alt="" src="//pages.anjukestatic.com/xinfang/img/afheader/6/head_mob_20130909.jpg"/>
+      </a>
+     </div>
+    </div>
+    <div class="clearfix glbNavigation">
+     <!-- 头部导航 -->
+     <ul class="L_tabs" style="float:none;">
+      <li class="li_items">
+       <a class="a_nav" href="https://.anjuke.com/" soj="navigation">
+        首 页
+       </a>
+      </li>
+      <li class="li_items">
+       <a class="a_nav a_curr" href="https://.fang.anjuke.com/" soj="navigation">
+        新 房
+       </a>
+       <div class="sec_div" style="display: none;">
+        <a href="https://.fang.anjuke.com/loupan/" soj="navigation">
+         新盘
+        </a>
+        <a href="https://.news.anjuke.com/" soj="navigation">
+         楼讯
+        </a>
+        <a href="https://.fang.anjuke.com/hui/" soj="navigation">
+         热门活动
+        </a>
+        <a href="https://.fang.anjuke.com/fangyuan/" soj="navigation">
+         房源
+        </a>
+        <a href="https://.fang.anjuke.com/commercial/" soj="navigation">
+         商业地产
+        </a>
+        <a href="https://haiwai.anjuke.com" soj="navigation">
+         海外地产
+        </a>
+        <a href="https://.fang.anjuke.com/brand/list/" soj="navigation">
+         品牌专区
+        </a>
+       </div>
+      </li>
+      <li class="li_items">
+       <a class="a_nav" href="https://.anjuke.com/sale/" soj="navigation">
+        二手房
+       </a>
+       <div class="sec_div" style="display: none;">
+        <a href="https://.anjuke.com/sale/" soj="navigation">
+         房源
+        </a>
+        <a href="https://.anjuke.com/community/" soj="navigation">
+         小区
+        </a>
+        <a href="https://.anjuke.com/map/sale/" soj="navigation">
+         地图找房
+        </a>
+        <a href="https://www.anjuke.com/topic/" soj="navigation">
+         主题找房
+        </a>
+        <a href="https://.anjuke.com/tycoon/" soj="navigation">
+         找经纪人
+        </a>
+        <a href="https://.anjuke.com/tycoon/paiming/" soj="navigation">
+         优秀经纪人榜
+        </a>
+        <a href="https://.anjuke.com/tycoon/weiguijingjiren/" soj="navigation">
+         违规经纪人
+        </a>
+        <a href="https://www.anjuke.com/mobile?from=navigation" soj="navigation">
+         我要卖房
+        </a>
+       </div>
+      </li>
+      <li class="li_items">
+       <a class="a_nav" href="https://.zu.anjuke.com/" soj="navigation">
+        租 房
+       </a>
+       <div class="sec_div" style="display: none;">
+        <a href="https://.zu.anjuke.com/" soj="navigation">
+         区域找房
+        </a>
+        <a href="https://.zu.anjuke.com/ditu/" soj="navigation">
+         地图找房
+        </a>
+        <a href="https://www.anjuke.com/community/" soj="navigation">
+         小区
+        </a>
+       </div>
+      </li>
+      <li class="li_items" style="width:85px;margin-right:16px;">
+       <a class="a_nav" href="https://.sydc.anjuke.com/xzl-zu/" soj="navigation" style="width:85px;">
+        商铺写字楼
+       </a>
+       <div class="sec_div" style="display: none;">
+        <a href="https://.sydc.anjuke.com/sp-zu/" soj="navigation">
+         商铺出租
+        </a>
+        <a href="https://.sydc.anjuke.com/sp-shou/" soj="navigation">
+         商铺出售
+        </a>
+        <a href="https://.fang.anjuke.com/sp/all/w4/" soj="navigation">
+         商铺新盘
+        </a>
+        <a href="https://.sydc.anjuke.com/xzl-zu/" soj="navigation">
+         写字楼出租
+        </a>
+        <a href="https://.sydc.anjuke.com/xzl-shou/" soj="navigation">
+         写字楼出售
+        </a>
+        <a href="https://.fang.anjuke.com/xzl/all/w5/" soj="navigation">
+         写字楼新盘
+        </a>
+       </div>
+      </li>
+      <li class="li_items">
+       <a class="a_nav" href="https://haiwai.anjuke.com" soj="navigation">
+        海外地产
+       </a>
+      </li>
+      <li class="li_items">
+       <a class="a_nav" href="https://.news.anjuke.com/" soj="navigation">
+        楼 讯
+       </a>
+      </li>
+      <li class="li_items" style="width:85px;margin-right:16px;">
+       <a class="a_nav" href="https://ai.anjuke.com/?action=hydc" soj="navigation" style="width:85px;">
+        房产研究院
+       </a>
+      </li>
+      <li class="li_items">
+       <a class="a_nav" href="https://.anjuke.com/market/" soj="navigation">
+        房 价
+       </a>
+      </li>
+      <li class="li_items">
+       <a class="a_nav" href="https://.anjuke.com/ask/" soj="navigation">
+        问 答
+       </a>
+      </li>
+     </ul>
+     <!-- 用户信息 -->
+     <div class="R_user" style="height: 40px;float:right;" url="//.anjuke.com/">
+      <div class="login_info">
+       <div class="l" id="login_l">
+        <div class="m">
+         <a class="u_l" href="https://login.anjuke.com/login/form?history=aHR0cDovL2h5LmZhbmcuYW5qdWtlLmNvbS9jYXB0Y2hheGYtdmVyaWZ5Lw==" rel="nofollow">
+          用户登录
+         </a>
+         <a class="u_r" href="https://user.anjuke.com/register/?from=HeaderTop" rel="nofollow">
+          注册
+         </a>
+        </div>
+        <div class="o_b">
+         <ul>
+          <li class="third_c">
+           <a class="qq" href="https://member.anjuke.com/extlogin/?sid=anjuke&amp;url=aHR0cDovL2h5LmZhbmcuYW5qdWtlLmNvbS9jYXB0Y2hheGYtdmVyaWZ5Lw==&amp;logintype=qq" rel="nofollow">
+            QQ
+           </a>
+           <a class="twitter" href="https://member.anjuke.com/extlogin/?sid=anjuke&amp;url=aHR0cDovL2h5LmZhbmcuYW5qdWtlLmNvbS9jYXB0Y2hheGYtdmVyaWZ5Lw==&amp;logintype=weibo" rel="nofollow">
+            微博
+           </a>
+          </li>
+          <li>
+           <a _soj="HeaderTop" href="https://user.anjuke.com/my/login?history=aHR0cHM6Ly91c2VyLmFuanVrZS5jb20vbWFya2VkLw==" rel="nofollow">
+            我的收藏
+           </a>
+          </li>
+          <li>
+           <a _soj="HeaderTop" href="https://user.anjuke.com/my/login?history=aHR0cDovL2h5LmZhbmcuYW5qdWtlLmNvbS9jYXB0Y2hheGYtdmVyaWZ5Lw==" rel="nofollow">
+            浏览历史
+           </a>
+          </li>
+          <li>
+           <a _soj="HeaderTop" href="https://user.anjuke.com/my/login?history=aHR0cHM6Ly91c2VyLmFuanVrZS5jb20vc3Vic2NyaWJlL2NvbW1wcm9wL21hbmFnZS8=" rel="nofollow">
+            订阅管理
+           </a>
+          </li>
+          <li>
+           <a _soj="HeaderTop" href="https://user.anjuke.com/my/login?history=aHR0cHM6Ly91c2VyLmFuanVrZS5jb20vbWVtYmVyL2Fzay9teS8=" rel="nofollow">
+            我的问答
+           </a>
+          </li>
+          <li class="sep">
+          </li>
+          <li>
+           <a href="https://i.anjuke.com" rel="nofollow" soj="i_dhmge" target="_blank">
+            我要发房
+           </a>
+          </li>
+          <li>
+           <a href="https://user.anjuke.com/my/login?history=aHR0cHM6Ly9pLmFuanVrZS5jb20=" rel="nofollow" soj="i_dhmge">
+            我的房源
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="r" id="login_r">
+        <a _soj="HeaderTop" class="my" href="https://user.anjuke.com/my/login?history=aHR0cHM6Ly91c2VyLmFuanVrZS5jb20vbWFya2VkLw==">
+         收藏夹
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="clear">
+     </div>
+     <div class="secNav" id="secNav0">
+      <a class="sec_curr" href="https://.fang.anjuke.com/loupan/" soj="navigation">
+       新盘
+      </a>
+      <a href="https://.news.anjuke.com/" soj="navigation">
+       楼讯
+      </a>
+      <a href="https://.fang.anjuke.com/hui/" soj="navigation">
+       热门活动
+      </a>
+      <a href="https://.fang.anjuke.com/fangyuan/" soj="navigation">
+       房源
+      </a>
+      <a href="https://.fang.anjuke.com/commercial/" soj="navigation">
+       商业地产
+      </a>
+      <a href="https://haiwai.anjuke.com" soj="navigation">
+       海外地产
+      </a>
+      <a href="https://.fang.anjuke.com/brand/list/" soj="navigation">
+       品牌专区
+      </a>
+     </div>
+     <i class="iCon iLt">
+     </i>
+     <i class="iCon iRt">
+     </i>
+     <i class="iCon iLb">
+     </i>
+     <i class="iCon iRb">
+     </i>
+    </div>
+    <script type="text/javascript">
+     var is_zyx_view_page = 0;
+var kfs_check_login_url = '//.anjuke.com/';
+var aifang_fxb_domain = 'https://my.anjuke.com/fxb/';
+var aifang_fxd_domain = 'https://my.anjuke.com/fxd/';
+var show_simple_header = 0;
+var enable_fx_city = '0';
+var is_sale_header = '';
+var is_fx_header = '';
+    </script>
+    <script id="simpleNav" type="text/html">
+     false
+    </script>
+    <script id="baseUrl" type="text/html">
+     //.anjuke.com/
+    </script>
+    <script language="JavaScript" type="text/javascript">
+     /**
+ * Created with IntelliJ IDEA.
+ * User: bsy
+ * Date: 13-7-10
+ * Time: 下午5:36
+ * To change this template use File | Settings | File Templates.
+ */
+(function(){
+    function init(){
+        bindEvent();
+    }
+    init();
+
+    function bindEvent(){
+        J.s('.li_items').each(function(i, v){
+            v.on("mouseenter",function(){
+                v.down().addClass('a_nav_hover');
+                if(v[0].children.length > 1) {
+                    v.down(1).show();
+                    v.down().hasClass('a_curr') ? v.down(1).addClass('sec_div_curr') : v.down(1).removeClass('sec_div_curr');
+                }
+            });
+            v.on("mouseleave",function(){
+                v.down().removeClass('a_nav_hover');
+                if(v[0].children.length > 1) {
+                    v.down(1).hide();
+                }
+            });
+        })
+
+        function changeContent(idx){
+            var con = $('secNav' + idx);
+            J.s('.secNav').each(function(i,v){
+                v.hide();
+            })
+            con.show();
+        }
+    }
+}.require(['ui.autocomplete'],['ui.autocomplete_ajk']));
+
+//LoginPanel end
+
+function url_callback(url){
+    window.location.href = decodeURIComponent(url);
+}
+
+//截取字符串
+function subString(str, len, hasDot)
+{
+    var newLength = 0;
+    var newStr = "";
+    var chineseRegex = /[^\x00-\xff]/g;
+    var singleChar = "";
+    var strLength = str.replace(chineseRegex,"**").length;
+    for(var i = 0;i < strLength;i++){
+        singleChar = str.charAt(i).toString();
+        if(singleChar.match(chineseRegex) != null){
+            newLength += 2;
+        }else{
+            newLength++;
+        }
+        if(newLength > len){
+            break;
+        }
+        newStr += singleChar;
+    }
+
+    if(hasDot && strLength > len){
+        newStr += "...";
+    }
+    return newStr;
+}
+//alert(subString("流1云2博3客js截5取中英文字符串无乱码",10,true));
+
+var AFisLoginCookie = J.getCookie(J.site.cookies.auid);
+
+/*登陆 end*/
+    </script>
+    <!-- 微信+返回顶部 -->
+    <div class="lateral-box fix-pos" id="lateralBox">
+     <div class="lb-btn">
+      <!-- 520购物节 -->
+      <!-- 关注微信 -->
+      <!-- 小调查 -->
+      <!-- 收藏本页 -->
+      <!--我要发房 -->
+     </div>
+     <div class="lb-gotop">
+      <a class="totop" data-tracker="top-kw" href="javascript:void(0)" id="backtop" title="返回顶部">
+      </a>
+     </div>
+    </div>
+    <!--淘房成都入口 (我的开关在Aifang_Web_Loupan_View_Single，Aifang_Web_Loupan_View_SingleAuto  wade)-->
+    <!-- 读取当前cookie的域名 -->
+    <!-- 微信+返回顶部  结束-->
+   </div>
+   <div class="clear">
+   </div>
+   <div id="content">
+    <style>
+     #header{
+        display: none;
+    }
+    #footer{
+        display: none;
+    }
+    body { padding:0; margin:10px; text-align:center;}
+    .wrapper { width:100%; height:100%}
+    .image { margin:10px 0 }
+    p{
+        font-size:14px;
+    }
+    input{
+        display:block;
+        margin:0 auto 10px;
+        border:0;
+        padding:0;
+    }
+    .image img{display:block;margin:0 auto;}
+    .btns { width:143px; height:40px;color:#fff;background:#f60; }
+    </style>
+    <div class="wrapper">
+     <div class="info">
+      <div>
+       <form action="" id="captchaForm" method="post" name="form">
+        <input id="successToken" name="successToken" type="hidden" value=""/>
+        <input id="sessionId" name="sessionId" type="hidden" value="a38087f346184222901473297c72bd94"/>
+        <div id="ISDCaptcha">
+        </div>
+       </form>
+      </div>
+     </div>
+     <div class="clear">
+     </div>
+    </div>
+    <script src="//j1.58cdn.com.cn/resource/xxzl/captcha/js/isd_captcha.js">
+    </script>
+    <script language="JavaScript" type="text/javascript">
+     var captcha = ISDCaptcha({
+        'element' : 'ISDCaptcha',
+        'width' : 280,//宽度
+        'type' : 310,//验证码级别
+        'showType'   : 'embed', //  ['embed', 'trigger', 'win']//如果不传此值，默认为嵌入式.embed：嵌入式.trigger：触发式.win:弹出式
+        'sessionId' : 'a38087f346184222901473297c72bd94',
+        'targetElm':'submit',//只对弹出式有效,如果是根据后端策略确定是否为弹出时
+        //'winAutoShow':true,//弹出式时添加此属性会自动弹出,默认为false,不自动弹出
+        'successCallback' : function successCallback(data) {
+            document.getElementById("successToken").value = data.successToken;
+            document.getElementById("captchaForm").submit();
+        },
+        'failCallback' : function failCallback(data) {
+        }
+    })
+    captcha.init();
+
+    function check_code(){
+        $("error_msg").innerHTML = '';
+        var code = $('').value;
+        if(code == ''){
+            $("error_msg").innerHTML ='验证码必须填写';
+            return false;
+        }
+        return true;
+    }
+    </script>
+   </div>
+   <div class="clear">
+   </div>
+   <script type="text/javascript">
+    J.utils.retina.init();
+   </script>
+   <div id="footer">
+    <!--
+-->
+    <div class="avoid-blame">
+     免责声明：本站旨在为广大用户提供更多信息服务，不声明或保证所提供信息的准确性和完整性。页面所载内容及数据仅供用户参考和借鉴，最终以开发商实际公示为准，用户因参照本站信息进行相关交易所造成的任何后果与本站无关。如楼盘信息有误，您可以投诉或拨打举报电话：400-620-6688
+    </div>
+    <!-- 楼盘单页友链 -->
+    <div>
+    </div>
+    <div style="clear:left;">
+    </div>
+    <div class="footer-intro" id="topic">
+     <span class="link_span">
+      <a href="http://.anjuke.com/help/question/1" rel="nofollow">
+       关于安居客
+      </a>
+     </span>
+     |
+     <span class="link_span">
+      <a href="http://job.anjuke.com/" rel="nofollow">
+       人才招聘
+      </a>
+     </span>
+     |
+     <span class="link_span">
+      <a href="http://.anjuke.com/help/question/4" rel="nofollow">
+       联系我们
+      </a>
+     </span>
+     |
+     <span class="link_span">
+      <a href="http://.anjuke.com/help/question/7" rel="nofollow">
+       用户协议
+      </a>
+     </span>
+     |
+     <span class="link_span">
+      <a href="http://.anjuke.com/help" rel="nofollow">
+       使用帮助
+      </a>
+     </span>
+     |
+     <span class="link_span">
+      <a href="http://.anjuke.com/friendlink" rel="nofollow">
+       友情链接
+      </a>
+     </span>
+     |
+     <span class="link_span">
+      <a class="footer-select" href="javascript://" plates="map" rel="nofollow">
+       网站地图
+      </a>
+     </span>
+     |
+     <span class="link_span">
+      <a class="footer-select" href="javascript://" plates="city" rel="nofollow">
+       其它城市
+      </a>
+     </span>
+     |
+     <span class="link_span">
+      <a class="footer-select" href="javascript://" plates="fang" rel="nofollow">
+       最新房源
+      </a>
+     </span>
+     |
+     <span class="link_span">
+      <a href="http://.anjuke.com/wenti/">
+       最新问答
+      </a>
+     </span>
+     |
+     <span class="link_span">
+      <a class="footer-select" href="javascript://" plates="calculator" rel="nofollow">
+       房贷计算器
+      </a>
+     </span>
+     |
+     <span class="link_span">
+      <a href="http://www.zx110.org/cxs/index.html" rel="nofollow" target="_blank">
+       放心搜
+      </a>
+     </span>
+    </div>
+    <div style="clear:left;">
+    </div>
+    <div class="footer-plates city-plates" id="city_list">
+     <ul>
+      <!--
+                        <li><a href="//shanghai.anjuke.com/">上海房产网</a></li>
+                                <li><a href="//beijing.anjuke.com/">北京房产网</a></li>
+                                <li><a href="//shenzhen.anjuke.com/">深圳房产网</a></li>
+                                <li><a href="//guangzhou.anjuke.com/">广州房产网</a></li>
+                                <li><a href="//chengdu.anjuke.com/">成都房产网</a></li>
+                                <li><a href="//nanjing.anjuke.com/">南京房产网</a></li>
+                                <li><a href="//hangzhou.anjuke.com/">杭州房产网</a></li>
+                                <li><a href="//suzhou.anjuke.com/">苏州房产网</a></li>
+                                <li><a href="//tianjin.anjuke.com/">天津房产网</a></li>
+                                <li><a href="//chongqing.anjuke.com/">重庆房产网</a></li>
+                                <li><a href="//dalian.anjuke.com/">大连房产网</a></li>
+                                <li><a href="//wuhan.anjuke.com/">武汉房产网</a></li>
+                                <li><a href="//jinan.anjuke.com/">济南房产网</a></li>
+                                <li><a href="//foshan.anjuke.com/">佛山房产网</a></li>
+                                <li><a href="//wuxi.anjuke.com/">无锡房产网</a></li>
+                                <li><a href="//zhengzhou.anjuke.com/">郑州房产网</a></li>
+                                <li><a href="//cs.anjuke.com/">长沙房产网</a></li>
+                                <li><a href="//sjz.anjuke.com/">石家庄房产网</a></li>
+                                <li><a href="//hk.anjuke.com/">香港房产网</a></li>
+                                <li><a href="//qd.anjuke.com/">青岛房产网</a></li>
+                                <li><a href="//xa.anjuke.com/">西安房产网</a></li>
+                                <li><a href="//nb.anjuke.com/">宁波房产网</a></li>
+                                <li><a href="//hf.anjuke.com/">合肥房产网</a></li>
+                                <li><a href="//dg.anjuke.com/">东莞房产网</a></li>
+                                <li><a href="//fz.anjuke.com/">福州房产网</a></li>
+                                <li><a href="//km.anjuke.com/">昆明房产网</a></li>
+                                <li><a href="//gy.anjuke.com/">贵阳房产网</a></li>
+                                <li><a href="//ty.anjuke.com/">太原房产网</a></li>
+                                <li><a href="//sy.anjuke.com/">沈阳房产网</a></li>
+                                <li><a href="//ks.anjuke.com/">昆山房产网</a></li>
+                                <li><a href="//nc.anjuke.com/">南昌房产网</a></li>
+                                <li><a href="//zh.anjuke.com/">珠海房产网</a></li>
+                                <li><a href="//cz.anjuke.com/">常州房产网</a></li>
+                                <li><a href="//zs.anjuke.com/">中山房产网</a></li>
+                                <li><a href="//jx.anjuke.com/">嘉兴房产网</a></li>
+                                <li><a href="//xm.anjuke.com/">厦门房产网</a></li>
+                                <li><a href="//yt.anjuke.com/">烟台房产网</a></li>
+                                <li><a href="//heb.anjuke.com/">哈尔滨房产网</a></li>
+                                <li><a href="//haikou.anjuke.com/">海口房产网</a></li>
+                                <li><a href="//cc.anjuke.com/">长春房产网</a></li>
+                                <li><a href="//sanya.anjuke.com">三亚房产网</a></li>
+                                <li><a href="//huizhou.anjuke.com">惠州房产网</a></li>
+                                <li><a href="//baoding.anjuke.com">保定房产网</a></li>
+                                <li><a href="//guilin.anjuke.com">桂林房产网</a></li>
+                                <li><a href="//handan.anjuke.com">邯郸房产网</a></li>
+                                <li><a href="//huhehaote.anjuke.com">呼和浩特房产网</a></li>
+                                <li><a href="//jilin.anjuke.com">吉林房产网</a></li>
+                                <li><a href="//lanzhou.anjuke.com">兰州房产网</a></li>
+                                <li><a href="//langfang.anjuke.com">廊坊房产网</a></li>
+                                <li><a href="//luoyang.anjuke.com">洛阳房产网</a></li>
+                                <li><a href="//mianyang.anjuke.com">绵阳房产网</a></li>
+                                <li><a href="//nanning.anjuke.com">南宁房产网</a></li>
+                                <li><a href="//nantong.anjuke.com">南通房产网</a></li>
+                                <li><a href="//qinhuangdao.anjuke.com">秦皇岛房产网</a></li>
+                                <li><a href="//quanzhou.anjuke.com">泉州房产网</a></li>
+                                <li><a href="//shaoxing.anjuke.com">绍兴房产网</a></li>
+                                <li><a href="//taizhou.anjuke.com">泰州房产网</a></li>
+                                <li><a href="//tangshan.anjuke.com">唐山房产网</a></li>
+                                <li><a href="//weihai.anjuke.com">威海房产网</a></li>
+                                <li><a href="//weifang.anjuke.com">潍坊房产网</a></li>
+                                <li><a href="//xuzhou.anjuke.com">徐州房产网</a></li>
+                                <li><a href="//yangzhou.anjuke.com">扬州房产网</a></li>
+                                <li><a href="//yichang.anjuke.com">宜昌房产网</a></li>
+                                <li><a href="//yinchuan.anjuke.com">银川房产网</a></li>
+                                <li><a href="//zhenjiang.anjuke.com">镇江房产网</a></li>
+                -->
+      <li>
+       <a href="//m.anjuke.com/sh/taofang/quyufang/">
+        上海房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/bj/taofang/quyufang/">
+        北京房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/tj/taofang/quyufang/">
+        天津房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/dl/taofang/quyufang/">
+        大连房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/hz/taofang/quyufang/">
+        杭州房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/su/taofang/quyufang/">
+        苏州房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/nj/taofang/quyufang/">
+        南京房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/wx/taofang/quyufang/">
+        无锡房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/jn/taofang/quyufang/">
+        济南房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/qd/taofang/quyufang/">
+        青岛房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/ks/taofang/quyufang/">
+        昆山房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/fz/taofang/quyufang/">
+        福州房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/hf/taofang/quyufang/">
+        合肥房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/sz/taofang/quyufang/">
+        深圳房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/gz/taofang/quyufang/">
+        广州房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/fs/taofang/quyufang/">
+        佛山房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/cs/taofang/quyufang/">
+        长沙房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/sy/taofang/quyufang/">
+        三亚房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/hui/taofang/quyufang/">
+        惠州房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/cd/taofang/quyufang/">
+        成都房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/cq/taofang/quyufang/">
+        重庆房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/wh/taofang/quyufang/">
+        武汉房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/zz/taofang/quyufang/">
+        郑州房价
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/xa/taofang/quyufang/">
+        西安房价
+       </a>
+      </li>
+      <li>
+       <a href="//shanghai.anjuke.com/">
+        上海房产网
+       </a>
+      </li>
+      <li>
+       <a href="//beijing.anjuke.com/">
+        北京房产网
+       </a>
+      </li>
+      <li>
+       <a href="//tianjin.anjuke.com/">
+        天津房产网
+       </a>
+      </li>
+      <li>
+       <a href="//dalian.anjuke.com/">
+        大连房产网
+       </a>
+      </li>
+      <li>
+       <a href="//hangzhou.anjuke.com/">
+        杭州房产网
+       </a>
+      </li>
+      <li>
+       <a href="//suzhou.anjuke.com/">
+        苏州房产网
+       </a>
+      </li>
+      <li>
+       <a href="//nanjing.anjuke.com/">
+        南京房产网
+       </a>
+      </li>
+      <li>
+       <a href="//wuxi.anjuke.com/">
+        无锡房产网
+       </a>
+      </li>
+      <li>
+       <a href="//jinan.anjuke.com/">
+        济南房产网
+       </a>
+      </li>
+      <li>
+       <a href="//qd.anjuke.com/">
+        青岛房产网
+       </a>
+      </li>
+      <li>
+       <a href="//ks.anjuke.com/">
+        昆山房产网
+       </a>
+      </li>
+      <li>
+       <a href="//fz.anjuke.com/">
+        福州房产网
+       </a>
+      </li>
+      <li>
+       <a href="//hf.anjuke.com/">
+        合肥房产网
+       </a>
+      </li>
+      <li>
+       <a href="//shenzhen.anjuke.com/">
+        深圳房产网
+       </a>
+      </li>
+      <li>
+       <a href="//guangzhou.anjuke.com/">
+        广州房产网
+       </a>
+      </li>
+      <li>
+       <a href="//foshan.anjuke.com/">
+        佛山房产网
+       </a>
+      </li>
+      <li>
+       <a href="//cs.anjuke.com/">
+        长沙房产网
+       </a>
+      </li>
+      <li>
+       <a href="//sanya.anjuke.com/">
+        三亚房产网
+       </a>
+      </li>
+      <li>
+       <a href="//huizhou.anjuke.com/">
+        惠州房产网
+       </a>
+      </li>
+      <li>
+       <a href="//chengdu.anjuke.com/">
+        成都房产网
+       </a>
+      </li>
+      <li>
+       <a href="//chongqing.anjuke.com/">
+        重庆房产网
+       </a>
+      </li>
+      <li>
+       <a href="//wuhan.anjuke.com/">
+        武汉房产网
+       </a>
+      </li>
+      <li>
+       <a href="//zhengzhou.anjuke.com/">
+        郑州房产网
+       </a>
+      </li>
+      <li>
+       <a href="//xa.anjuke.com/">
+        西安房产网
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/sh/xinfang/">
+        上海楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/bj/xinfang/">
+        北京楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/tj/xinfang/">
+        天津楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/dl/xinfang/">
+        大连楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/hz/xinfang/">
+        杭州楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/su/xinfang/">
+        苏州楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/nj/xinfang/">
+        南京楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/wx/xinfang/">
+        无锡楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/jn/xinfang/">
+        济南楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/qd/xinfang/">
+        青岛楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/ks/xinfang/">
+        昆山楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/fz/xinfang/">
+        福州楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/hf/xinfang/">
+        合肥楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/sz/xinfang/">
+        深圳楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/gz/xinfang/">
+        广州楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/fs/xinfang/">
+        佛山楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/cs/xinfang/">
+        长沙楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/sy/xinfang/">
+        三亚楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/hui/xinfang/">
+        惠州楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/cd/xinfang/">
+        成都楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/cq/xinfang/">
+        重庆楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/wh/xinfang/">
+        武汉楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/zz/xinfang/">
+        郑州楼盘
+       </a>
+      </li>
+      <li>
+       <a href="//m.anjuke.com/xz/xinfang/">
+        西安楼盘
+       </a>
+      </li>
+     </ul>
+    </div>
+    <!-- map-plates Starts -->
+    <div class="footer-plates map-plates">
+     <a href="//.fang.anjuke.com/fangsitemap/">
+      新房地图
+     </a>
+     <a href="//m.anjuke.com//xinfang/sitemap/">
+      手机版新房地图
+     </a>
+     <a href="//www.anjuke.com//cm/">
+      二手房小区大全
+     </a>
+     <a href="//m.anjuke.com//xiaoqu/">
+      手机版小区大全
+     </a>
+     <a href="//www.anjuke.com//cm-zu/">
+      租房小区大全
+     </a>
+     <a href="//.anjuke.com/sitemap/">
+      二手房地图
+     </a>
+     <a href="//m.anjuke.com//sitemap/">
+      手机版二手房地图
+     </a>
+     <a href="//.fang.anjuke.com/fangsitemap/A/">
+      楼盘大全
+     </a>
+    </div>
+    <!-- fang-plates Starts -->
+    <div class="footer-plates fang-plates">
+     <a href="//.fang.anjuke.com/fang/">
+      新房房源
+     </a>
+     <a href="//.anjuke.com/fang/">
+      二手房房源
+     </a>
+     <a href="//.zu.anjuke.com/fang/">
+      租房房源
+     </a>
+     <a href="//m.anjuke.com//propsitemap/esf/">
+      手机二手房房源
+     </a>
+     <a href="//m.anjuke.com//propsitemap/zf/">
+      手机租房房源
+     </a>
+     <a href="//.xzl.anjuke.com/fang_shou/">
+      写字楼出售
+     </a>
+     <a href="//.xzl.anjuke.com/fang_zu/">
+      写字楼出租
+     </a>
+     <a href="//.sp.anjuke.com/fang_shou/">
+      商铺出售
+     </a>
+     <a href="//.sp.anjuke.com/fang_zu/">
+      商铺出租
+     </a>
+    </div>
+    <div class="footer-plates calculator-plates">
+     <a href="//.fang.anjuke.com/calculator/property/">
+      新房房贷计算器
+     </a>
+     <a href="//.fang.anjuke.com/calculator/prepayment/">
+      提前还款计算器
+     </a>
+     <a href="//.fang.anjuke.com/calculator/tax/">
+      税费计算器
+     </a>
+     <a href="//.fang.anjuke.com/calculator/house/">
+      购房能力评估计算器
+     </a>
+     <a href="//.fang.anjuke.com/calculator/fund/">
+      公积金贷款计算器
+     </a>
+     <a href="//www.anjuke.com/calculator/loan">
+      房贷计算器
+     </a>
+    </div>
+    <!-- copyright Starts -->
+    <div class="copyright">
+     <p>
+      客服热线/虚假信息举报：400-620-6688
+      <span>
+       邮箱：
+       <a href="mailto:service@58ganji.com" rel="nofollow" target="_blank">
+        service@58ganji.com
+       </a>
+      </span>
+      Copyright © 2007-2019 www.anjuke.com All Rights Reserved
+      <a href="https://www.anjuke.com/sitemap-miibeian" rel="nofollow">
+       ICP号：沪 B2-20090008
+      </a>
+     </p>
+    </div>
+    <!-- copyright End -->
+   </div>
+   <div class="clear">
+   </div>
+  </div>
+  <div class="user-pa-box" id="phone-activate">
+   <!-- 纯登录空模板 -->
+   <div class="user-pa-signuser">
+   </div>
+   <!-- 订阅报名 subscribe-->
+   <div class="user-pa-header user-pa-subscribe">
+    <p class="pa-label">
+     我们将为您保密个人信息！
+     <span class="pa-tap">
+      请填写您接收订阅的手机号码：
+     </span>
+    </p>
+    <ul class="clearfix pa-notice">
+     <li>
+      <input sub-data="1" type="checkbox" value="2"/>
+      <span>
+       变价通知
+      </span>
+     </li>
+     <li>
+      <input sub-data="2" type="checkbox" value="15"/>
+      <span>
+       优惠通知
+      </span>
+     </li>
+     <li>
+      <input sub-data="3" type="checkbox" value="1"/>
+      <span>
+       开盘通知
+      </span>
+     </li>
+     <li>
+      <input sub-data="4" type="checkbox" value="3"/>
+      <span>
+       最新动态
+      </span>
+     </li>
+     <li>
+      <input sub-data="5" type="checkbox" value="4"/>
+      <span>
+       看房团通知
+      </span>
+     </li>
+    </ul>
+   </div>
+   <!-- 看房团 kanfang-->
+   <div class="user-pa-header user-pa-kanfang">
+    <div class="pa-apply">
+     <div class="pa-flow">
+     </div>
+     <p class="pa-label">
+      <span class="pa-base">
+      </span>
+     </p>
+    </div>
+   </div>
+   <!-- 优惠 youhui-->
+   <div class="user-pa-header user-pa-youhui">
+    <div class="pa-apply">
+     <div class="pa-flow">
+     </div>
+     <p class="pa-label">
+      <span class="pa-base">
+      </span>
+      <span class="pa-discount">
+      </span>
+     </p>
+     <p class="pa-label-sec">
+     </p>
+    </div>
+   </div>
+   <!-- 组团报名 zutuan-->
+   <div class="user-pa-header user-pa-zutuan">
+    <div class="pa-apply">
+     <div class="pa-flow">
+     </div>
+     <p class="pa-label">
+      <span class="pa-base">
+      </span>
+     </p>
+    </div>
+   </div>
+   <!-- 专车 zhuanche-->
+   <div class="user-pa-header user-pa-zhuanche">
+    <div class="pa-apply">
+     <div class="pa-flow">
+     </div>
+     <p class="pa-label">
+     </p>
+     <p class="pa-label-sec">
+      留下联系方式，开启属于您的专车之旅：
+     </p>
+    </div>
+   </div>
+   <!-- 预约 book bookuser-->
+   <div class="user-pa-header user-pa-book">
+    <div class="pa-apply">
+     <div class="pa-book">
+      <!-- 模板
+                <div class="pa-book-row clearfix">
+                    <div class="pa-book-one iconfont"></div>
+                    <div class="pa-book-one"></div>
+                    <div class="pa-book-one"></div>
+                </div>
+                -->
+     </div>
+     <p class="pa-label-sec">
+     </p>
+     <p class="pa-label-sec">
+      请填写您的手机号码，以便置业顾问联系您看房。
+     </p>
+    </div>
+   </div>
+   <!-- 订阅相似楼盘动态 similarloupan-->
+   <div class="user-pa-header user-pa-booking-call">
+    <p class="pa-label">
+     现在是售楼处休息时间，售楼处会在您预约后尽快联系您。
+    </p>
+   </div>
+   <!-- 订阅相似楼盘动态 similarloupan-->
+   <div class="user-pa-header user-pa-similarloupan">
+    <p class="pa-label">
+     我们将为您保密个人信息！
+     <span class="pa-tap">
+      请填写您接收订阅的手机号码：
+     </span>
+    </p>
+   </div>
+   <!-- 问答 -->
+   <div class="user-pa-header user-pa-wenda">
+    <p class="pa-label">
+     请手机验证登录后参与问答，您也可以登录安居客APP查看更多问答内容。
+    </p>
+   </div>
+   <!-- 点评 -->
+   <div class="user-pa-header user-pa-ugc">
+    <p class="pa-label">
+     请手机验证登录后点评该楼盘，您也可以登录安居客APP查看更多点评内容。
+    </p>
+   </div>
+   <!-- 登录弹窗/或绑定弹窗 -->
+   <div class="user-pa-verify">
+    <!-- loading -->
+    <div class="loading-wrap">
+     <div class="loading-item">
+      <!--[if IE]> <div class="spinner-wrap"> <![endif]-->
+      <div class="spinner">
+       <div class="spinner-container container1">
+        <div class="circle1">
+        </div>
+        <div class="circle2">
+        </div>
+        <div class="circle3">
+        </div>
+        <div class="circle4">
+        </div>
+       </div>
+       <div class="spinner-container container2">
+        <div class="circle1">
+        </div>
+        <div class="circle2">
+        </div>
+        <div class="circle3">
+        </div>
+        <div class="circle4">
+        </div>
+       </div>
+       <div class="spinner-container container3">
+        <div class="circle1">
+        </div>
+        <div class="circle2">
+        </div>
+        <div class="circle3">
+        </div>
+        <div class="circle4">
+        </div>
+       </div>
+      </div>
+      <!--[if IE]> </div> <![endif]-->
+     </div>
+     <p class="loading-tip">
+      正在加载中，请稍后...
+     </p>
+    </div>
+    <!-- loading end -->
+    <div id="pa-iframe-box">
+    </div>
+   </div>
+  </div>
+  <div class="user-apply-modal" id="user-apply-modal">
+   <div class="user-am-msg clearfix">
+    <div class="iconfont suc-icon">
+     
+    </div>
+    <div class="am-msg-box">
+     <div class="am-msg-comment">
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- 已登录状态下，弹出提示，确认后才报名 -->
+  <div id="user-confrim-modal" style="display: none;">
+   <p class="user-confrim-label">
+   </p>
+   <p class="user-confrim-tips">
+   </p>
+   <p class="user-confrim-btn" id="user-confrim-btn">
+    确认
+   </p>
+  </div>
+  <div class="user-booking-call-hint--label" style="display:none;">
+   <p class="user-one-key-sub-hint--des">
+    恭喜您已经使用手机号xxxxx订阅成功，您将会在第一时间内获取yyyyy的动态信息。
+   </p>
+   <p class="user-booking-call-hint--des">
+    恭喜您已经使用手机号xxxxx预约成功，请保持手机畅通，售楼处会尽快联系您。
+   </p>
+   <div class="user-booking-call-hint--tip">
+    如需修改手机号，请重新登录。
+    <a class="comfirm-btn" href="javascript:;">
+     我知道了
+    </a>
+   </div>
+  </div>
+  <script async="" defer="" src="//pages.anjukestatic.com/prism/performance.js?v=1456202590" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   ;window.perfConfig = {
+    pageName : 'Aifang_Web_Captcha_CaptChaVerifyPage',
+    siteName : 'aifang'
+};
+  </script>
+  <script type="text/javascript">
+   var xxfwConfig = {
+        namespace:'anjuke_xinfang_c_pc'
+    };
+  </script>
+  <script async="" defer="" src="//pages.anjukestatic.com/kfstouch/js/58antiSpider/20180807001/xxfw.min.js" type="text/javascript">
+  </script>
+  <script src="//pages.anjukestatic.com/xinfang/js/jquery-1.9.1/jquery-underscore.min.js" type="text/javascript">
+  </script>
+  <script src="//pages.anjukestatic.com/xinfang/js/jquery-1.9.1/jqueryconf.js" type="text/javascript">
+  </script>
+  <script src="//pages.anjukestatic.com/xinfang/js/prototype-1.6.0.3/prototype_packed.js" type="text/javascript">
+  </script>
+  <script src="//pages.anjukestatic.com/xinfang/js/aav2/cc.js" type="text/javascript">
+  </script>
+  <script src="//pages.anjukestatic.com/xinfang/js/jquery-ui-1.10.1/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
+  </script>
+  <script src="//pages.anjukestatic.com/xinfang/js/scriptaculous-1.8.2/effects_packed.js" type="text/javascript">
+  </script>
+  <script src="//pages.anjukestatic.com/xinfang/js/scriptaculous-1.8.2/controls_packed.js" type="text/javascript">
+  </script>
+  <script crossorigin="" src="https://include.anjukestatic.com/aifang/res/2019091706/b/Aifang_Web_Captcha_CaptChaVerify.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   jQuery(document).ready(function(){
+    var fav_url = '';
+    var fav_title = '';
+    window.cookie_domain = '';
+    aifang.lateralbox.backTohome("#backtop");// 跳转到top
+    aifang.lateralbox.gpClosebox("#gEwm .close","#gEwm");// 关闭二维码扫描
+    aifang.lateralbox.gpShowbox("#lateralBox .qrcode","#gEwm");// 显示二维码扫描
+    aifang.lateralbox.addFavorite("#lateralBox .fav", fav_url, fav_title);// 加入浏览器收藏夹
+    /* 统计点击量*/
+    aifang.lateralbox.statClicks("#lateralBox .fav");//收藏本页
+    aifang.lateralbox.statClicks("#lateralBox .qrcode");//关注微信button
+    aifang.lateralbox.statClicks("#backtop"); //返回顶部
+    aifang.lateralbox.statClicks("#gEwm"); //二维码关闭
+
+    
+    
+});
+
+(function(){
+    var ST = new J.site.tracker('anjuke', 'Aifang_Web_Captcha_CaptChaVerifyPage');//site, p参数
+
+        ST.setPageName('Aifang_Web_Captcha_CaptChaVerifyPage');//pn 参数
+    
+        ST.addCustomParam("");//cp 参数
+    
+    ST.setNUid('ajk_member_id');
+    ST.track();
+    if(!window.XF){
+        window.XF = {};
+    }
+    XF.pagename = 'Aifang_Web_Captcha_CaptChaVerifyPage';
+    XF.site = 'anjuke';
+})();
+(function(){
+    // 58 track 统计，最大努力交付
+    try{
+        var st = new SiteTracker();
+        st.setSite('anjuke');
+        st.setPage('Aifang_Web_Captcha_CaptChaVerifyPage');
+                    st.setPageName('Aifang_Web_Captcha_CaptChaVerifyPage');
+                        st.setCustomParam("");//cp 参数
+                st.setNUid('ajk_member_id');
+        st.buildParams();
+        var _trackURL = st.getParams();
+            delete _trackURL.cp;
+            delete _trackURL.sc;
+        window._trackURL = JSON.stringify(_trackURL);
+        st.setSite('anjuke-npv');
+        st.setPage('Aifang_Web_Captcha_CaptChaVerifyPage_tracklog');
+                    st.setPageName('Aifang_Web_Captcha_CaptChaVerifyPage_tracklog');
+                var script = document.createElement("script");
+        script.src = '//tracklog.58.com/referrer_anjuke_pc.js';
+        script.async = true;
+        var content = (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]);
+        script.onload = function() {
+            content.removeChild(script);
+            st.track();
+        };
+        content.appendChild(script);
+    }catch(e){
+        
+    }
+})();
+(function(){
+    document.cookie="isp=true;path=/; domain=anjuke.com";
+})();
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?c5899c8768ebee272710c9c5f365a6d8";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+  </script>
+  <!-- SEO-百度站长平台自动推送 -->
+  <script type="text/javascript">
+   (function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+
+    jQuery('.map-plates,.fang-plates,.calculator-plates').css({'border':'1px solid #e0e0e0','margin':'10px 0 0','padding':'7px 20px','text-align':'left'});
+    jQuery('.map-plates,.fang-plates,.calculator-plates').find('a').css({'color':'#656565'});
+    jQuery('.footer-plates').hide();
+    jQuery('.footer-select').click(function(){
+        jQuery('.footer-plates').hide();
+        jQuery('.'+jQuery(this).attr('plates')+'-plates').show();
+    });
+    jQuery('#footer').mouseleave(function(){
+        setTimeout(function(){jQuery('.footer-plates').hide();},500);
+    });
+
+//统一登录退出功能添加history
+;(function($) {
+    var base64CurrentUrl = "";
+   $(document).ready(function() {
+        var href;
+        if(base64CurrentUrl) {
+            $("body").on("click.logout", "a", function(e) {
+                var elm = $(this);
+                if(elm.html() == "退出" && (href = elm.attr("href")) ) {
+                    e.preventDefault();
+                    window.location.href = href + (href.indexOf("?") >= 0 ? "&" : "?") + "history=" + base64CurrentUrl;
+                }
+            });
+        }
+    });
+})(jQuery);
+
+//<div class="resource-ifx" data-resource_id="1110310" data-regin_id="123" data-subregion_id="444" data-city_id="1312"></div>
+window.AsyncResourceHandle = new window.AsyncResource({
+    url : "https://www.fang.anjuke.com/aifang/web/loupan/ajax/resource/"
+});
+  </script>
+  <script type="text/javascript">
+   var _hmt = _hmt || [];
+    (function(){
+        
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?c5899c8768ebee272710c9c5f365a6d8";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+
+    }.ready());
+  </script>
+  <script>
+   ;(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+  </script>
+ </body>
+</html>

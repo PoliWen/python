@@ -100,7 +100,7 @@ def get_movies_top250(url,mydb,save_method):
         data['category'] = re.search(r'^.*\d*\s+/\s+.*\s+/\s+(.*)',showtime,re.I|re.M).group(1)
         data['score'] = item.select('.bd .star .rating_num')[0].string
         data['comment_num'] = item.select('.bd .star span')[3].string.replace('人评价','')
-        if save_method=='csv':
+        if save_method == 'csv':
             save_data_to_csv(data)
         elif save_method == 'mysql':
             dataList = []
@@ -167,7 +167,15 @@ def save_data_to_csv(data):
     print('成功添加'+ str(n) +'条数据')
 
 def main():
-    print(get_pages_data(save_method='mysql'))
+    you_choise = input('输入你想保存的数据格式\nA.csv\nB.mysql\n')
+    you_choise = you_choise.upper()
+    if you_choise == 'A':
+        save_format = 'csv'
+    elif you_choise == 'B':
+        save_format = 'mysql'
+    else:
+        print('只能输入A或者B，没有其他选项')
+    get_pages_data(save_method = save_format)
 
 if __name__ == '__main__':
     main()
