@@ -1,3 +1,8 @@
+'''
+@Author: kingw
+@Date: 2019-09-09 18:42:05
+@Description: file content
+'''
 # 输出一个文件夹下的所有文件夹列表以及输出文件夹
 import os
 import re
@@ -7,8 +12,6 @@ import re
 
 dirpath = './os/'
 filelist = os.listdir(dirpath)
-
-
 def add_mark():
     mark = input('请输入你要添加的前缀')
     for oldname in filelist:

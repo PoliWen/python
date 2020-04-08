@@ -1,3 +1,8 @@
+'''
+@Author: kingw
+@Date: 2019-08-29 16:26:18
+@Description: file content
+'''
 #利用插件生成html
 #读取docx文件并且按指定的格式输出html文件,可以继续拓展这个代码，带文件的怎么读取学习
 #将这个方法用面向对象的方式进行改写
@@ -30,7 +35,7 @@ def changetohtml(sdir,edir):
     print(sdirArr)
     print(edirArr)
     i = 0
-    for sfp in sdirArr: #pythin循环的这个i序列号有什么好的办法处理吗？
+    for sfp in sdirArr: #pythin循环的这个i序列号有什么好的办法处理吗？有啊使用enumate
         efp = edirArr[i]
         i += 1
         print(sfp,efp)

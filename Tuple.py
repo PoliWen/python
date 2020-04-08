@@ -1,4 +1,10 @@
+'''
+@Author: kingw
+@Date: 2019-07-31 14:14:15
+@Description: file content
+'''
 # 这一章节我们来学习元组Tuple的使用
+#-*-coding:utf-8-*-
 tup = (1, 2, 3, 4, 5, 6)
 tup1 = ('a', 'b', 'c', 'd', 'e')
 print(tup)
